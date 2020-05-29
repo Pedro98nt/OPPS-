@@ -1,0 +1,44 @@
+
+@font-face {
+    font-family: Clip;
+    src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+  }
+  html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sign {
+    font-family: 'Clip';
+    color: #bc13fe;
+    font-size: 6em;
+    text-shadow: 0 0 0.6rem #bc13fe, 0 0 1.5rem #df00fe, -0.2rem 0.1rem 1rem #df00fe, 0.2rem 0.1rem 1rem #bc13fe, 0 -0.5rem 2rem #df00fe, 0 0.5rem 3rem #bc13fe;
+    animation: rotate 5s 2s infinite ease-in-out alternate;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
